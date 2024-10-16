@@ -1,0 +1,108 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixsins";
+@import "../../../../assets/styles/auth-form";
+@import "../../../../assets/styles/popup";
+
+.footer.footer {
+  padding: 40px 0 54px 0;
+  background-color: #b9d5fd;
+
+  .container {
+    .footer-content {
+      display: flex;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      margin-bottom: 40px;
+
+      .footer-menu {
+        margin-left: 40px;
+
+        nav ul {
+          display: flex;
+          margin: 0;
+          padding: 0;
+
+          li {
+            margin-right: 30px;
+            list-style: none;
+
+            a {
+              font-size: 16px;
+              color: $dark-blue-text-color;
+              cursor: pointer;
+              text-decoration: none;
+
+              &.active {
+                color: $blue-text-color;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-phone {
+        font-size: 16px;
+        color: #709fdc;
+        text-decoration: none;
+        margin-right: 141px;
+      }
+    }
+
+    .footer-contacts {
+      display: flex;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      margin-bottom: 6px;
+
+      .footer-contact {
+        max-width: 253px;
+        margin-right: 60px;
+
+        &:nth-child(2) {
+          max-width: 153px;
+        }
+
+        .footer-contact-head {
+          font-size: 16px;
+          color: #709fdc;
+          margin-bottom: 10px;
+        }
+
+        .footer-contact-info {
+          font-size: 16px;
+          color: $dark-blue-text-color;
+
+          a.footer-phone {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: $dark-blue-text-color;
+            text-decoration: none;
+          }
+
+          a.footer-email {
+            font-size: 14px;
+            color: $dark-blue-text-color;
+            text-decoration: none;
+          }
+        }
+
+        .footer-social {
+          display: flex;
+          align-items: center;
+
+          a {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .footer-rights {
+      font-size: 16px;
+      color: #709fdc;
+    }
+  }
+}
+

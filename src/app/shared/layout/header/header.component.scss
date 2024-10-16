@@ -1,0 +1,78 @@
+@import "../../../../assets/styles/variables";
+
+.header.header {
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+
+      .logo {
+          cursor: pointer;
+      }
+
+      .header-menu {
+        margin-left: 100px;
+        margin-right: 227px;
+
+        nav ul {
+          display: flex;
+          margin: 0;
+          padding: 0;
+
+          li {
+            margin-right: 30px;
+            list-style: none;
+
+
+            a {
+              font-size: 16px;
+              color: $dark-blue-text-color;
+              cursor: pointer;
+              text-decoration: none;
+
+              &.active {
+                color: $blue-text-color;
+              }
+            }
+          }
+        }
+      }
+
+      .header-phone {
+        font-size: 16px;
+        color: #709fdc;
+        text-decoration: none;
+        margin-right: 141px;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+
+        a {
+          cursor: pointer;
+          text-decoration: none;
+          position: relative;
+
+
+          span {
+            margin-left: 9px;
+            font-size: 16px;
+            color: $dark-blue-text-color;
+            position: absolute;
+            top: 3px;
+            left: 27px;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}

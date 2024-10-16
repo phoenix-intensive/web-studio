@@ -1,0 +1,244 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixsins";
+@import "../../../../assets/styles/loader";
+
+
+.detail.detail {
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  .container {
+    .crumbs {
+      display: flex;
+      font-size: 16px;
+      color: #b9d5fd;
+
+      span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: $blue-text-color;
+        margin-left: 8px;
+      }
+    }
+
+    .detail-about {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      display: flex;
+      align-items: flex-start;
+
+      .detail-about-info {
+        width: 607px;
+        margin-right: 106px;
+
+        .detail-about-info-head {
+          @include head-lora-38;
+          margin-bottom: 40px;
+        }
+
+        .detail-about-info-description {
+          font-size: 20px;
+          line-height: 130%;
+          color: $blue-text-color;
+        }
+      }
+
+      .detail-image {
+        width: 527px;
+        height: 320px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+      }
+    }
+
+    .detail-info {
+      display: flex;
+
+      .detail-info-main {
+        display: flex;
+        flex-direction: column;
+
+        .detail-info-text {
+          width: 818px;
+          margin-right: 132px;
+          margin-bottom: 60px;
+
+        }
+
+        .detail-contact-block {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 60px;
+
+          .contact-block-head {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: $blue-text-color;
+            margin-right: 20px;
+          }
+
+          .detail-contact-block-info {
+
+            a {
+              margin-right: 14px;
+            }
+          }
+        }
+
+        .comments {
+          width: 818px;
+
+          .comments-head {
+            @include head-lora-38;
+            margin-bottom: 20px;
+          }
+
+          .comments-extra-no-login {
+            font-size: 14px;
+            color: $dark-blue-text-color;
+            margin-bottom: 60px;
+
+            a {
+              font-size: 14px;
+              color: $blue-text-color;
+              text-decoration: none;
+            }
+          }
+
+          .comments-extra-login-no-comments {
+            font-size: 14px;
+            color: $dark-blue-text-color;
+            margin-bottom: 40px;
+          }
+
+          .comments-article {
+            .comments-form {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 60px;
+            }
+          }
+
+          .comments-comment {
+            margin-bottom: 40px;
+
+            .comments-comment-header {
+              display: flex;
+              align-items: center;
+              margin-bottom: 15px;
+
+
+              .comments-comment-info {
+                display: flex;
+                flex-direction: column;
+                margin-left: 26px;
+
+                .comments-comment-author {
+                  font-family: "Montserrat", sans-serif;
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: $blue-text-color;
+                  margin: 0;
+                }
+
+                .comments-comment-date {
+                  font-family: "Montserrat", sans-serif;
+                  font-weight: 600;
+                  font-size: 14px;
+                  color: #bebebe;
+                  margin: 2px 0 0;
+                }
+              }
+            }
+
+            .comments-comment-text {
+              font-size: 14px;
+              line-height: 140%;
+              color: $dark-blue-text-color;
+              margin-bottom: 39px;
+            }
+
+            .comments-comment-footer {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .comments-comment-reactions {
+                display: flex;
+                gap: 15px;
+
+                .like, .dislike {
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                }
+
+                .like svg, .dislike svg {
+                  margin-right: 3px;
+                }
+
+                .like svg.active path {
+                  stroke: #007bff;  // Цвет обводки при активном состоянии
+                }
+
+                .dislike svg.active path {
+                  stroke: #007bff;  // Цвет обводки при активном состоянии
+                }
+
+
+
+
+                .report svg {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+
+          .comments-comment-add {
+            a {
+              display: inline-flex;
+              align-items: center;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 500;
+              font-size: 20px;
+              color: $blue-text-color;
+              text-decoration: none;
+            }
+
+            span {
+              margin-left: 10px;
+            }
+
+            svg {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+
+
+      .related-articles {
+        width: 292px;
+        display: flex;
+        flex-direction: column;
+
+        .related-articles-title {
+          @include head-lora-26;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,418 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixsins";
+@import "../../../assets/styles/auth-form";
+@import "../../../assets/styles/popup";
+
+
+.promo {
+  padding-bottom: 120px;
+
+  .container {
+    .carousel-items {
+      position: relative;
+      width: 100%;
+
+
+      .promo-block {
+        position: relative;
+        background-image: url('https://phoenix-intensive.github.io/web-studio/assets/images/promo/ellipse.png');
+        background-repeat: no-repeat;
+        background-position-x: calc(50% - 270px);
+        display: flex;
+        height: 500px;
+
+        .promo-content-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+        }
+
+        .promo-content {
+          text-align: left;
+          padding: 100px 0 98px 80px;
+          border-radius: 8px;
+          width: 520px;
+          color: #fff;
+
+          .promo-content-pre-title {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 130%;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: $blue-text-color;
+          }
+
+          .promo-content-title {
+            font-family: "Lora", sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 130%;
+            color: #fff;
+            margin-bottom: 40px;
+            width: 550px;
+
+            span {
+              color: $blue-text-color;
+            }
+          }
+
+          .promo-content-description {
+            font-size: 24px;
+            line-height: 130%;
+            color: #fff;
+            margin-top: 20px;
+            width: 485px;
+          }
+        }
+      }
+
+      .carousel-arrows {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .move-backward {
+          margin-left: 10px;
+        }
+
+        .move-forward {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.services {
+  padding-bottom: 120px;
+
+  .container {
+    .services-title {
+      @include head-lora-38;
+      margin-bottom: 40px;
+    }
+
+    .services-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .services-item {
+        width: 291px;
+        height: 498px;
+        box-sizing: border-box;
+
+        .services-item-image {
+          width: 291px;
+          height: 291px;
+          border-radius: 5px;
+          background-size: cover;
+          background-position: center;
+          margin-bottom: 15px;
+        }
+
+        .services-item-name {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          color: $blue-text-color;
+          margin-bottom: 10px;
+        }
+
+        .services-item-description {
+          font-size: 14px;
+          line-height: 130%;
+          color: $dark-blue-text-color;
+          height: 90px;
+
+        }
+
+        .services-item-info {
+          display: flex;
+          align-items: baseline;
+          justify-content: space-between;
+          height: 51px;
+
+          .services-item-price {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: $blue-text-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.info {
+  padding-bottom: 120px;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    .info-image {
+      margin-right: 68px;
+    }
+
+    .info-about {
+      .info-about-info {
+        .info-about-info-header {
+          @include head-lora-38;
+          margin-bottom: 20px;
+        }
+
+        .info-about-info-description {
+          font-size: 14px;
+          line-height: 130%;
+          color: #1e1a2b;
+          margin-bottom: 40px;
+          width: 633px;
+
+          span {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .info-advantages {
+        .info-advantages-header {
+          @include head-lora-26;
+          margin-bottom: 20px;
+        }
+
+        .info-advantages-items {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .info-advantages-item {
+            width: 316px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .info-advantages-item-number {
+              border-radius: 50%;
+              background-color: #b9d5fd;
+              position: relative;
+              width: 170px;
+              height: 40px;
+
+              span {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                font-size: 50px;
+                color: $blue-text-color;
+                position: absolute;
+                top: -18px;
+                left: 7px;
+              }
+            }
+
+            .info-advantages-item-description {
+              font-size: 14px;
+              line-height: 130%;
+              color: #1e1a2b;
+              margin-left: 20px;
+
+              span {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.popular-articles {
+  padding-bottom: 120px;
+
+  .container {
+    .popular-articles-title {
+      @include head-lora-38;
+      margin-bottom: 40px;
+    }
+
+    .popular-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .popular-articles-blog-action {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+
+      a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: underline;
+        color: $blue-text-color;
+
+        span {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+.reviews {
+  margin-bottom: 120px;
+
+  .container {
+    .reviews-title {
+      @include head-lora-38;
+      margin-bottom: 20px;
+    }
+
+    .reviews-carousel {
+      position: relative;
+
+      .review-item {
+        width: 396px;
+        height: 267px;
+        padding: 30px;
+        border: 2px solid $blue-text-color;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        .review-item-head {
+          display: flex;
+          align-items: center;
+
+          .review-item-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            margin-right: 26px;
+          }
+
+          .review-item-name {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: $blue-text-color;
+          }
+        }
+
+        .review-item-text {
+          font-size: 16px;
+          line-height: 140%;
+          color: $dark-blue-text-color;
+          margin-top: 15px;
+        }
+      }
+
+      .reviews-arrows {
+        display: flex;
+
+        a {
+          top: calc(50% - 5px);
+          display: flex;
+          position: absolute;
+          cursor: pointer;
+
+          &.move-backward {
+            left: -25px;
+          }
+
+          &.move-forward {
+            right: -25px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+.contacts {
+  margin-bottom: 120px;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+
+    .map {
+      margin-right: 26px;
+    }
+
+    .contacts-block {
+      max-width: 501px;
+      font-size: 14px;
+
+      .contacts-block-head {
+        @include head-lora-38;
+        margin-bottom: 20px;
+      }
+
+      .contact-block {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .contact-block-head {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          color: $blue-text-color;
+          margin-bottom: 10px;
+        }
+
+        .contact-block-info {
+          color: $dark-blue-text-color;
+
+          a {
+            text-decoration: none;
+            color: $dark-blue-text-color;
+          }
+
+          .contact-block-social {
+            display: flex;
+            align-items: center;
+
+            a {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
